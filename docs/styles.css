@@ -1,0 +1,11 @@
+:root{color-scheme:light;--ink:#172c31;--muted:#53696d;--accent:#087d77;--line:#d9e5e4;--paper:#fff;--wash:#f3f8f7}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.8}
+header{background:var(--paper);border-bottom:1px solid var(--line)}nav{max-width:1050px;margin:auto;padding:19px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{color:var(--ink);font-size:13px;letter-spacing:.13em;font-weight:700;text-decoration:none}.navlinks{display:flex;gap:20px;font-size:14px}.navlinks a{white-space:nowrap}
+main{max-width:1050px;margin:36px auto 70px;padding:42px 54px 54px;background:var(--paper);border:1px solid var(--line);border-radius:14px}.meta{margin:0 0 16px;color:var(--muted);font-size:13px;letter-spacing:.02em}
+h1{font-size:clamp(28px,4vw,42px);line-height:1.32;letter-spacing:-.025em;margin:0 0 22px}h2{font-size:24px;line-height:1.45;border-top:1px solid var(--line);padding-top:30px;margin-top:42px}p{margin:18px 0}strong{font-weight:650}
+a{color:var(--accent);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{color:#055c58}code{background:#edf4f3;border:1px solid #e2eeec;border-radius:4px;font-family:ui-monospace,Consolas,monospace;font-size:.85em;padding:.1em .3em;overflow-wrap:anywhere}
+li{padding-left:5px;margin:18px 0}ol{padding-left:26px}.table-wrap{overflow-x:auto;margin:23px 0}table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.65}th,td{padding:14px 15px;border:1px solid var(--line);vertical-align:top;text-align:left}th{background:var(--wash);font-weight:650}td:first-child{min-width:230px}td:nth-child(2),td:nth-child(3){min-width:70px}
+footer{max-width:1050px;margin:0 auto 38px;padding:0 28px;color:var(--muted);font-size:13px}.footer-links{display:flex;gap:20px;flex-wrap:wrap}::selection{background:#c3e7df}
+@media(max-width:680px){body{font-size:16px}nav{padding:16px 20px}.navlinks{gap:15px}main{margin:18px 10px 35px;padding:25px 20px 35px;border-radius:10px}h2{font-size:21px}td,th{padding:10px}footer{padding:0 22px}}
+@media print{body{background:white}header,footer{display:none}main{border:0;padding:0;margin:0;max-width:none}a{color:inherit}h2{break-after:avoid}table{font-size:11px}}

@@ -1,0 +1,42 @@
+name: Workaround result / 回退结果
+description: Report whether the tracking rollback helped in your game.
+title: "[Result] Sphere Tracking rollback / 球体追踪回退"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share results without uploading raw saves, Steam IDs, credentials or personal paths.
+        请分享测试结果，不上传原始存档、Steam 账号ID、凭据或个人路径。
+  - type: input
+    id: build
+    attributes:
+      label: Game version and build ID / 游戏版本和 build ID
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform and solo/server / 平台及单机或服务器
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Party, sphere module, mods / 队伍、球体模块、模组
+      description: Include Lunaris and relevant sphere mods; say if unmodded.
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Before/after rank and unspent count / 修改前后等级及剩余遗物数量
+      placeholder: "Rank 1 -> 0; held count 0 -> 1; pickup flags unchanged."
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Test conditions and result / 测试条件与结果
+      description: Describe target, distance and any other settings changed.
+    validations:
+      required: true

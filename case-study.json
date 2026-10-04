@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "title": "Palworld Sphere Tracking rank rollback: one player-confirmed case",
+  "publisher": "Cola113",
+  "platform": "Steam / Windows",
+  "installed_steam_build_id": "25246127",
+  "in_game_version_string": null,
+  "game_mode_scope": "Local Windows Steam save; other modes not validated",
+  "observed_before_edit": {
+    "lunaris_in_party": true,
+    "lunaris_internal_character_id": "Mutant",
+    "equipped_sphere_module": "SphereModule_Sniper",
+    "ue4ss_mods_enabled": true,
+    "relevant_mod_present": "RecoverPalSpheres",
+    "mod_causation_established": false
+  },
+  "edits": [
+    {
+      "file": "Level.sav",
+      "field": "Correct player / SaveParameter / GotStatusPointList / row with StatusName = パルスフィアホーミング / StatusPoint",
+      "before": 1,
+      "after": 0,
+      "meaning": "Bought Sphere Tracking rank"
+    },
+    {
+      "file": "Players/<player-uid>.sav",
+      "field": "SaveData / RecordData / RelicPossessNumMap / EPalRelicType::SphereHoming",
+      "before": 0,
+      "after": 1,
+      "meaning": "Unspent effigy count; refund of one spent effigy"
+    }
+  ],
+  "pickup_flags": {
+    "number_of_existing_sphere_homing_entries": 1,
+    "before": true,
+    "after": true,
+    "changed": false
+  },
+  "verification": {
+    "current_save_backed_up": true,
+    "container_format_before": "PlM1 / Oodle",
+    "container_format_after": "PlM1 / Oodle",
+    "compressed_and_uncompressed_lengths_checked": true,
+    "decompressed_data_change": "One changed byte in each of the two target integer values; no other decompressed bytes changed",
+    "other_current_save_files_unchanged": true,
+    "player_reported_in_game_recovery": true,
+    "automated_trajectory_measurement": false,
+    "controlled_mod_off_test": false,
+    "raw_saves_published": false
+  },
+  "conclusion": "Player-confirmed rank-1-to-0 rollback workaround in one modded Steam/Windows case; root cause and general applicability remain unverified",
+  "scope_not_tested": [
+    "Higher ranks",
+    "Unmodded game",
+    "Dedicated servers",
+    "Multiplayer",
+    "Consoles",
+    "Game Pass",
+    "Future builds"
+  ],
+  "guides": {
+    "zh_CN": "https://cola113.github.io/palworld-sphere-homing-fix/",
+    "en": "https://cola113.github.io/palworld-sphere-homing-fix/en/"
+  }
+}

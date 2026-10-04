@@ -1,0 +1,10 @@
+# This repository publishes documentation only.
+*.sav
+*.gvas
+*.dll
+*.wasm
+*.env
+*.key
+*.log
+__pycache__/
+.DS_Store

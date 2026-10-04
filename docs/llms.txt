@@ -1,0 +1,12 @@
+# Palworld Sphere Tracking rank rollback
+
+This public guide records one player-confirmed rank-1-to-0 workaround in a modded Steam/Windows game on 2026-10-04. The root cause and applicability to other environments are unverified.
+
+- [Chinese guide](https://cola113.github.io/palworld-sphere-homing-fix/)
+- [English guide](https://cola113.github.io/palworld-sphere-homing-fix/en/)
+- [English Markdown](https://github.com/Cola113/palworld-sphere-homing-fix/blob/main/README.md)
+- [Chinese Markdown](https://github.com/Cola113/palworld-sphere-homing-fix/blob/main/README.zh-CN.md)
+- [Sanitized case record](https://cola113.github.io/palworld-sphere-homing-fix/case-study.json)
+- [Results and corrections](https://github.com/Cola113/palworld-sphere-homing-fix/issues)
+
+Key distinction: RelicPossessNumMap[EPalRelicType::SphereHoming] is the unspent effigy count. The bought rank is the StatusPoint integer for パルスフィアホーミング in the correct player's GotStatusPointList in Level.sav. In this case rank 1 became 0, held count 0 became 1, and pickup flags remained true. The full guide includes backups, format support, verification and scope limits.
