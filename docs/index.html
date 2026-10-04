@@ -20,7 +20,7 @@
 <body>
 <header><nav aria-label="Language and source"><a class="brand" href="./">PALWORLD · SAVE NOTES</a><div class="navlinks"><a href="./" lang="zh-CN">中文</a><a href="en/" lang="en">English</a><a href="https://github.com/Cola113/palworld-sphere-homing-fix">GitHub</a></div></nav></header>
 <main><p class="meta">2026-10-04 · 玩家确认恢复 · 一个有模组的 Steam／Windows 案例</p><article><h1>幻兽帕鲁：力量雕像升级后帕鲁球追踪失效？一次回退等级的实测方法</h1>
-<p><a href="en/">English</a> · <a href="https://cola113.github.io/palworld-sphere-homing-fix/">网页版说明</a> · <a href="https://github.com/Cola113/palworld-sphere-homing-fix/issues/new?template=result.yml">反馈测试结果</a></p>
+<p><a href="en/">English</a> · <a href="https://cola113.github.io/palworld-sphere-homing-fix/">网页版说明</a> · <a href="https://github.com/oMaN-Rod/palworld-save-pal/discussions/383">存档编辑器社区讨论</a> · <a href="https://github.com/Cola113/palworld-sphere-homing-fix/issues/new?template=result.yml">反馈测试结果</a></p>
 <p><strong>一名 Steam／Windows 玩家将力量雕像的球体追踪等级从 1 回退为 0 后，确认远距离追踪恢复了。</strong> 同时退回了这次升级消耗的 1 个遗物，保留了已拾取标记。这是在有模组的环境下完成的一次实测；尚未确定冲突原因，也没有完成无模组环境的对照测试。</p>
 <p>最容易改错的一点：<strong>玩家文件里的 <code>RelicPossessNumMap[EPalRelicType::SphereHoming]</code> 是剩余遗物数量，不是力量雕像的追踪等级。</strong> 它已经为 0 时，再设为 0 无法撤销升级。真正的等级是 <code>Level.sav</code> 中玩家 <code>GotStatusPointList</code> 里，名称为 <code>パルスフィアホーミング</code> 的那一行的 <code>StatusPoint</code> 整数。<a href="https://github.com/oMaN-Rod/palworld-save-pal/blob/69213343cbc42abeef8e68b249efad655f17649a/psp-core/src/domain/relic.rs">等级映射源码</a>、<a href="https://github.com/oMaN-Rod/palworld-save-pal/blob/69213343cbc42abeef8e68b249efad655f17649a/psp-core/src/domain/player.rs#L170">剩余数量源码</a>。</p>
 <h2>适用症状与实测范围</h2>

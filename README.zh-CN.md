@@ -1,6 +1,6 @@
 # 幻兽帕鲁：力量雕像升级后帕鲁球追踪失效？一次回退等级的实测方法
 
-[English](README.md) · [网页版说明](https://cola113.github.io/palworld-sphere-homing-fix/) · [反馈测试结果](https://github.com/Cola113/palworld-sphere-homing-fix/issues/new?template=result.yml)
+[English](README.md) · [网页版说明](https://cola113.github.io/palworld-sphere-homing-fix/) · [存档编辑器社区讨论](https://github.com/oMaN-Rod/palworld-save-pal/discussions/383) · [反馈测试结果](https://github.com/Cola113/palworld-sphere-homing-fix/issues/new?template=result.yml)
 
 **一名 Steam／Windows 玩家将力量雕像的球体追踪等级从 1 回退为 0 后，确认远距离追踪恢复了。** 同时退回了这次升级消耗的 1 个遗物，保留了已拾取标记。这是在有模组的环境下完成的一次实测；尚未确定冲突原因，也没有完成无模组环境的对照测试。
 

@@ -1,6 +1,6 @@
 # Palworld sphere homing stopped after a Statue of Power upgrade: a player-confirmed rollback
 
-[中文说明](README.zh-CN.md) · [Read the guide on the web](https://cola113.github.io/palworld-sphere-homing-fix/en/) · [Report a result](https://github.com/Cola113/palworld-sphere-homing-fix/issues/new?template=result.yml)
+[中文说明](README.zh-CN.md) · [Read the guide on the web](https://cola113.github.io/palworld-sphere-homing-fix/en/) · [Community discussion](https://github.com/oMaN-Rod/palworld-save-pal/discussions/383) · [Report a result](https://github.com/Cola113/palworld-sphere-homing-fix/issues/new?template=result.yml)
 
 **One Steam/Windows player reported that long-range Pal Sphere homing recovered after resetting the Statue of Power's Sphere Tracking rank from 1 to 0.** The spent Lunaris Effigy was refunded, while its collected flag stayed true. This was a modded game; the cause and behavior in an unmodded game have not been isolated.
 
